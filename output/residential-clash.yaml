@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   type: vless
-  server: 61.230.162.88
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  type: vless
   server: 59.125.69.24
   port: 443
   uuid: 06e177f7-240d-4687-bd85-235505801a5e
@@ -30,7 +18,32 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: white-bush-712e.498-f8f.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  type: vless
+  server: 61.230.162.88
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -44,28 +57,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  type: vless
-  server: 61.18.134.10
-  port: 443
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
@@ -73,8 +72,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
