@@ -20,18 +20,18 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /merky-connect/de6/
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
