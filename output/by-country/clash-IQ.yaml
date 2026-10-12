@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  type: vless
+  server: 172.67.147.125
+  port: 443
+  uuid: 2a19a994-314c-4caa-bff8-e2b51b777ef8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 27fzvUrmcSyeXgyZY0.manihaGHgoei.wORKERs.DEv
+  network: ws
+  ws-opts:
+    path: /vl/laffD3xDvmAhaPfb2tfZBaFUqM?ed=2560
+    headers:
+      Host: 27fzvurmcsyexgyzy0.manihaghgoei.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+rules:
+- MATCH,PROXIES
