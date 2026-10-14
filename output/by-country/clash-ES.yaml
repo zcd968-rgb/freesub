@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
   type: vless
-  server: cf.090227.xyz
+  server: 31.57.190.49
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -15,24 +15,10 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /+
+    path: /
     headers:
       Host: lucasjow.us.ci
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
   server: 31.57.190.17
   port: 443
@@ -46,21 +32,7 @@ proxies:
     path: /
     headers:
       Host: lucasjow.us.ci
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -80,8 +52,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,7 +60,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 rules:
 - MATCH,PROXIES
