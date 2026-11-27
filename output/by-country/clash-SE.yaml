@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vmess
-  server: 62.93.166.184
+  server: leviko-se3307.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -17,7 +17,7 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 02 - xiaohe
   type: vmess
-  server: leviko-se3307.shopingggg.ir
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
